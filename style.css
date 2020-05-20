@@ -10,13 +10,12 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background-color: #2ec4b6;
     color: #fdfffc;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 #app {
@@ -25,23 +24,26 @@ header {
 }
 
 ul {
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 ul li {
     border-bottom: 1px solid #fdfffc;
     list-style: none;
-    width: 100vw;
+    padding: 13px 5px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+a {
+    float: right;
+    padding-right: 5px;
 }
 
 input {
-    width: 76vw;
+    width: 80%;
     height: 10vh;
     padding: 0 2%;
     margin: 0;
@@ -52,15 +54,43 @@ input {
 
 button {
     float: right;
-    width: 20vw;
+    width: 20%;
     height: 10vh;
     background-color: #2ec4b6;
     margin: 0;
     font-size: 14pt;
+    float: left;
 }
 
 img { 
     width: 20px;
     margin: 0 5px;
-    vertical-align: middle;
+    
+}
+
+h1 {
+    float: left;
+    width: 90%;
+}
+
+.pointsTodo {
+    float: right;
+    width: 10%;
+    background-color: #011627;
+    color: #ff9f1c;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;    
+    width: 100%;
 }
